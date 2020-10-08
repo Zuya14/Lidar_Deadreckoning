@@ -24,6 +24,18 @@ class LidarMap:
 
     def __init__(self, lineSegments):
         self.lineSegments = lineSegments
+        
+    def getLineSegments(self, R=None, T=None):
+        if R is None or T is None:
+            return self.lineSegments
+        else:
+            return self.calcLineSegments(self.lineSegments, R, T)
+
+    def calcLineSegments(self, lineSegments, R, T):
+        t = T.reshape(2)
+        r = R.reshape((2,2))
+        moved = [r @ X + t for X in lineSegments.reshape((-1, 2))]
+        return np.array(moved).reshape(-1, 2, 2) 
 
     def calcNearestPointsInMap(self, points, lineSegments):
         nearest_points = np.array([self.calcNearestPointInMap(pt, lineSegments) for pt in points])
@@ -74,6 +86,12 @@ class LidarMap:
 
     def calcDistance(self, p1, p2):
         return np.sqrt(self.calcSquaredError(p1, p2))
+
+    def calcError(self, pts1, pts2):
+        dist = np.array([self.calcDistance(p1, p2) for p1,p2 in zip(pts1, pts2)])
+        mse = np.average(dist)
+        std = np.std(dist)
+        return mse, std
 
 if __name__ == '__main__':
     lineSegments =  getLineSegments1()

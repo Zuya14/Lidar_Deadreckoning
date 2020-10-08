@@ -28,3 +28,9 @@ def readLidarFile(filename, delimiter=','):
         datas = np.loadtxt(file, delimiter=delimiter)
 
     return datas
+
+def calcR(deg):
+    t = np.deg2rad(deg)
+    R = np.array([[np.cos(t), -np.sin(t)],
+                  [np.sin(t),  np.cos(t)]])
+    return R
