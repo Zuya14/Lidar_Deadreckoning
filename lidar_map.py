@@ -37,6 +37,23 @@ class LidarMap:
         moved = [r @ X + t for X in lineSegments.reshape((-1, 2))]
         return np.array(moved).reshape(-1, 2, 2) 
 
+    def calcNearestPointsInMap2(self, points, lineSegments):
+        l = np.array([self.calcNearestPointInMap2(pt, lineSegments) for pt in points])
+        dist = l[:,1]
+        std = np.std(dist)
+        nearest_points = np.array([ll[0].tolist() for ll in l])
+        # index = [i for i, x in enumerate(dist) if x < 3*std]
+        index = [i for i, x in enumerate(dist) if x < 0.05]
+        return nearest_points[index], index
+
+    def calcNearestPointInMap2(self, point, lineSegments):
+        near_points = [self.calcNearestPoint(point, ls) for ls in lineSegments]
+        error = [self.calcSquaredError(point, p) for p in near_points]
+
+        min_d = min(error) 
+        nearest_point = near_points[error.index(min_d)]
+        return nearest_point, min_d
+
     def calcNearestPointsInMap(self, points, lineSegments):
         nearest_points = np.array([self.calcNearestPointInMap(pt, lineSegments) for pt in points])
         return nearest_points
