@@ -42,8 +42,8 @@ class LidarMap:
         dist = l[:,1]
         std = np.std(dist)
         nearest_points = np.array([ll[0].tolist() for ll in l])
-        # index = [i for i, x in enumerate(dist) if x < 3*std]
-        index = [i for i, x in enumerate(dist) if x < 0.05]
+        index = [i for i, x in enumerate(dist) if x < 2*std]
+        # index = [i for i, x in enumerate(dist) if x < 0.05]
         return nearest_points[index], index
 
     def calcNearestPointInMap2(self, point, lineSegments):

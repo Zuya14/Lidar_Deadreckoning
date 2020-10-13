@@ -61,7 +61,7 @@ class ICP:
 
             prev_error = error
 
-        print("error:{}, std:{}".format(error, std))
+        # print("error:{}, std:{}".format(error, std))
 
         R, T = self.fitTransform(lidarMap.getLineSegments().reshape((-1,2)), movedLS.reshape((-1,2)))
 
@@ -114,7 +114,7 @@ class ICP:
 
             prev_error = error
 
-        print("error:{}, std:{}".format(error, std))
+        # print("error:{}, std:{}".format(error, std))
 
         R, T = self.fitTransform(lidarMap.getLineSegments().reshape((-1,2)), movedLS.reshape((-1,2)))
 
@@ -147,8 +147,8 @@ if __name__ == '__main__':
     lineSegments =  getLineSegments1()
     lidarMap = LidarMap(lineSegments)
 
-    # data = readLidarFile("lidar_10_long_fixed.txt", delimiter='\t')
-    data = readLidarFile("lidar_25_long_fixed.txt", delimiter='\t')
+    data = readLidarFile("lidar_10_long_fixed.txt", delimiter='\t')
+    # data = readLidarFile("lidar_25_long_fixed.txt", delimiter='\t')
 
     converter = Converter(deg_offset = -45)
 
@@ -179,6 +179,8 @@ if __name__ == '__main__':
     results = []
     results2 = []
 
+    i = 0
+
     for dist in data:
         drawLidar.clear()
         drawLidar2.clear()
@@ -199,17 +201,23 @@ if __name__ == '__main__':
         results += [T]
         results2 += [T2]
 
+        print('({:.2f}, {:.2f})'.format(-T[0], -T[1]), '({:.2f}, {:.2f})'.format(-T2[0], -T2[1]))
+
         drawLidar.drawMap(lidarMap.getLineSegments())
         drawLidar.drawMap(lidarMap.getLineSegments(R, T))
         drawLidar.draw_points(xy)
+        drawLidar.fig.savefig("output/normal"+str(i)+".png")
 
         drawLidar2.drawMap(lidarMap.getLineSegments())
         drawLidar2.drawMap(lidarMap.getLineSegments(R2, T2))
         drawLidar2.draw_points(xy)
+        drawLidar2.fig.savefig("output/filtered"+str(i)+".png")
 
-        # drawLidar.update(0.01)
-        drawLidar.update(0.5)
-        drawLidar2.update(0.5)
+        drawLidar.update(0.01)
+        # drawLidar.update(0.5)
+        # drawLidar2.update(0.5)
+
+        i += 1
 
     for i in range(len(results)-1):
         diff = results[i+1]-results[i]

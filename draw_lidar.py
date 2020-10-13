@@ -27,7 +27,7 @@ class DrawLidar:
         p = points.reshape((-1, 2))
         self.ax.scatter(p[:,0], p[:,1], s=psize, c=color)
 
-    def drawMap(self, lineSegments, color='brown'):
+    def drawMap(self, lineSegments, color='green'):
         for points in lineSegments:
             s = points[0]
             e = points[1]
