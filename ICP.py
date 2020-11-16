@@ -32,7 +32,7 @@ from lidar_map import LidarMap
 
 class ICP:
 
-    def __init__(self, maxIter = 10, epcilon=0.01):
+    def __init__(self, maxIter = 50, epcilon=1e-3):
         self.maxIter = maxIter
         self.epcilon = epcilon
 
@@ -63,7 +63,8 @@ class ICP:
 
         # print("error:{}, std:{}".format(error, std))
 
-        R, T = self.fitTransform(lidarMap.getLineSegments().reshape((-1,2)), movedLS.reshape((-1,2)))
+        # R, T = self.fitTransform(lidarMap.getLineSegments().reshape((-1,2)), movedLS.reshape((-1,2)))
+        R, T = self.fitTransform(movedLS.reshape((-1,2)), lidarMap.getLineSegments().reshape((-1,2)))
 
         return R, T
 
@@ -116,7 +117,8 @@ class ICP:
 
         # print("error:{}, std:{}".format(error, std))
 
-        R, T = self.fitTransform(lidarMap.getLineSegments().reshape((-1,2)), movedLS.reshape((-1,2)))
+        # R, T = self.fitTransform(lidarMap.getLineSegments().reshape((-1,2)), movedLS.reshape((-1,2)))
+        R, T = self.fitTransform(movedLS.reshape((-1,2)), lidarMap.getLineSegments().reshape((-1,2)))
 
         return R, T
 
@@ -156,10 +158,10 @@ if __name__ == '__main__':
 
     from utils import calcR
     R = calcR(0.0)
-    T = np.array([[-1.0], [-1.0]])
+    T = np.array([[1.0], [1.0]])
 
     R2 = calcR(0.0)
-    T2 = np.array([[-1.0], [-1.0]])
+    T2 = np.array([[1.0], [1.0]])
     # print(lidarMap.getLineSegments(R, -T))
     # print(lidarMap.getLineSegments(np.linalg.inv(R), -T))
 
@@ -191,8 +193,8 @@ if __name__ == '__main__':
         # icp.fitTransform(xy, nearest)
 
         # R, T = icp.estimate(xy, lidarMap, R, T)
-        R, T = icp.estimate(xy, lidarMap, R, T)
-        R2, T2 = icp.estimate2(xy, lidarMap, R2, T2)
+        R, T = icp.estimate(xy, lidarMap, R.T, -T)
+        R2, T2 = icp.estimate2(xy, lidarMap, R2.T, -T2)
         # print(R)
         # print("deg:", np.rad2deg(np.arctan2(R[0,0], R[1,0])))
         # print("m:", T)
@@ -201,15 +203,19 @@ if __name__ == '__main__':
         results += [T]
         results2 += [T2]
 
-        print('({:.2f}, {:.2f})'.format(-T[0], -T[1]), '({:.2f}, {:.2f})'.format(-T2[0], -T2[1]))
+        # print('({:.3f}, {:.3f})'.format(-T[0], -T[1]), '({:.3f}, {:.3f})'.format(-T2[0], -T2[1]))
+        # print('({:.3f}, {:.3f})'.format(T[0], T[1]), '({:.3f}, {:.3f})'.format(T2[0], T2[1]))
+        print('({:.0f}, {:.0f}, {:.2f})'.format(T[0]*1000, T[1]*1000, np.arctan2(R[1,0], R[0,0])), '({:.0f}, {:.0f}, {:.2f})'.format(T2[0]*1000, T2[1]*1000, np.arctan2(R2[1,0], R2[0,0])))
 
         drawLidar.drawMap(lidarMap.getLineSegments())
-        drawLidar.drawMap(lidarMap.getLineSegments(R, T))
+        # drawLidar.drawMap(lidarMap.getLineSegments(R, T))
+        drawLidar.drawMap(lidarMap.getLineSegments(R.T, -T))
         drawLidar.draw_points(xy)
         drawLidar.fig.savefig("output/normal"+str(i)+".png")
 
         drawLidar2.drawMap(lidarMap.getLineSegments())
-        drawLidar2.drawMap(lidarMap.getLineSegments(R2, T2))
+        # drawLidar2.drawMap(lidarMap.getLineSegments(R2, T2))
+        drawLidar2.drawMap(lidarMap.getLineSegments(R2.T, -T2))
         drawLidar2.draw_points(xy)
         drawLidar2.fig.savefig("output/filtered"+str(i)+".png")
 
