@@ -7,7 +7,7 @@ lineSegments = [
 ]
 '''
 
-def getLineSegments1():
+def getLineSegments0():
     ls = np.array(
         [
             [[0.0 ,0.0],[3.0, 0.0]],
@@ -19,6 +19,20 @@ def getLineSegments1():
         )
     return ls
 
+def getLineSegments2():
+    ls = np.array(
+        [
+            [[0.0 ,0.0],[3.0, 0.0]],
+            [[0.0, 0.0],[0.0, 3.0]],
+            [[3.0, 0.0],[3.0, 3.0]],
+            [[0.0, 3.0],[3.0, 3.0]],
+
+            [[0.0, 1.0],[0.5, 1.0]],
+            [[1.5, 1.0],[3.0, 1.0]],
+            [[1.0, 2.0],[2.0, 2.0]]
+        ]
+        )
+    return ls
 
 class LidarMap:
 
@@ -111,7 +125,7 @@ class LidarMap:
         return mse, std
 
 if __name__ == '__main__':
-    lineSegments =  getLineSegments1()
+    lineSegments =  getLineSegments0()
     lidarMap = LidarMap(lineSegments)
 
     point = np.array([2,1])

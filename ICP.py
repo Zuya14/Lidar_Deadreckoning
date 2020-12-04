@@ -144,9 +144,9 @@ class ICP:
 
 if __name__ == '__main__':
     from utils import Converter, readLidarFile
-    from lidar_map import LidarMap, getLineSegments1
+    from lidar_map import LidarMap, getLineSegments0
 
-    lineSegments =  getLineSegments1()
+    lineSegments =  getLineSegments0()
     lidarMap = LidarMap(lineSegments)
 
     data = readLidarFile("lidar_10_long_fixed.txt", delimiter='\t')
