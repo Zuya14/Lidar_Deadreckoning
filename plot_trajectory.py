@@ -1,5 +1,5 @@
 import numpy as np
-from utils import Converter, readLidarFile, calcR
+from utils import Converter, readLidarFile, readLidarFile2, calcR
 from lidar_map import LidarMap, getLineSegments0, getLineSegments2
 from draw_lidar import DrawLidar
 from ICP import ICP
@@ -15,8 +15,15 @@ if __name__ == '__main__':
     
     drawLidar.drawMap(lidarMap.getLineSegments(), color='grey', linewidth=5)
 
-    data = readLidarFile("lidar_10_long_fixed.txt", delimiter='\t')
-  
+    # data = readLidarFile("lidar_10_long_fixed.txt", delimiter='\t')
+    flag, data = readLidarFile2("LiDAR.txt", delimiter=',')
+    
+    print(flag.shape)
+    print(data.shape)
+
+    # data = data * 0.01
+    data = data * 10.0
+
     converter = Converter(deg_offset = -45)
 
     icp = ICP(maxIter = 50, epcilon=1e-2)
@@ -28,14 +35,15 @@ if __name__ == '__main__':
     dtm = []
     rnd = []
 
-    for dist in data:
+    # for dist in data:
+    for dist, f in zip(data, flag):
         xy = converter.dist_to_xy(dist)
 
         R, T = icp.estimate(xy, lidarMap, R.T, -T)
 
         pos.append([T[0], T[1]])
 
-        if random.random() < 0.2:
+        if f > 0:
             rnd.append([T[0], T[1]])
         else:
             dtm.append([T[0], T[1]])
@@ -47,7 +55,19 @@ if __name__ == '__main__':
     rnd = np.array(rnd)
 
     drawLidar.draw_lines(pos, color='blue')
-    drawLidar.draw_points(dtm, color='blue', psize=50, alpha=0.5)
-    drawLidar.draw_points(rnd, color='red', psize=50, alpha=0.5)
+    drawLidar.save("demo0.png")
 
-    drawLidar.update(-1)
+    drawLidar.draw_points(dtm, color='blue', psize=50, alpha=0.5)
+    drawLidar.save("demo1.png")
+
+    drawLidar.draw_points(rnd, color='red', psize=50, alpha=0.9)
+    drawLidar.save("demo2.png")
+
+    drawLidar.clear()
+    drawLidar.drawMap(lidarMap.getLineSegments(), color='grey', linewidth=5)
+    drawLidar.draw_lines(pos, color='blue')
+    drawLidar.draw_points(rnd, color='red', psize=50, alpha=0.9)
+    drawLidar.save("demo3.png")
+
+    # drawLidar.update(-1)
+    drawLidar.update(0.1)

@@ -39,6 +39,9 @@ class DrawLidar:
             s = points[0]
             e = points[1]
             self.ax.plot([s[0], e[0]],[s[1], e[1]], c=color, linewidth=linewidth)
+
+    def save(self, name):
+        self.fig.savefig(name)
         
 
 if __name__ == '__main__':
