@@ -1,0 +1,23 @@
+1回目  行動=0 行動前の状態１lidarbufpast=36364 行動前の状態２lidarcatchpast=222052 robo_x=1480.734266 robo_y=747.394410 Lidar_x=1500 Lidar_y=1500 dist_now=1502.729093 dist_past=0.000000
+2回目  行動=3 行動前の状態１lidarbufpast=36364 行動前の状態２lidarcatchpast=348774 robo_x=1477.089795 robo_y=994.477270 Lidar_x=1466 Lidar_y=2249 
+3回目  行動=0 行動前の状態１lidarbufpast=55265 行動前の状態２lidarcatchpast=222052 robo_x=1468.194144 robo_y=753.122873 Lidar_x=1460 Lidar_y=2485 
+4回目  行動=0 行動前の状態１lidarbufpast=63167 行動前の状態２lidarcatchpast=348773 robo_x=1467.176398 robo_y=995.154459 Lidar_x=1466 Lidar_y=2729 
+5回目  行動=3 行動前の状態１lidarbufpast=56266 行動前の状態２lidarcatchpast=405863 robo_x=1473.547995 robo_y=1244.249879 Lidar_x=1444 Lidar_y=2476 
+6回目  行動=0 行動前の状態１lidarbufpast=63766 行動前の状態２lidarcatchpast=352870 robo_x=1451.802409 robo_y=994.702748 Lidar_x=1456 Lidar_y=1152 
+7回目  行動=1 行動前の状態１lidarbufpast=64756 行動前の状態２lidarcatchpast=407398 robo_x=1459.568097 robo_y=1151.047984 Lidar_x=1207 Lidar_y=1140 
+8回目  行動=1 行動前の状態１lidarbufpast=64745 行動前の状態２lidarcatchpast=411478 robo_x=1204.517561 robo_y=1128.645661 Lidar_x=956 Lidar_y=1128 
+9回目  行動=1 行動前の状態１lidarbufpast=64723 行動前の状態２lidarcatchpast=411461 robo_x=953.961626 robo_y=1113.833223 Lidar_x=701 Lidar_y=1110 
+10回目  行動=2 行動前の状態１lidarbufpast=54745 行動前の状態２lidarcatchpast=411427 robo_x=696.305970 robo_y=1104.447260 Lidar_x=952 Lidar_y=1106 
+11回目  行動=1 行動前の状態１lidarbufpast=55733 行動前の状態２lidarcatchpast=345925 robo_x=950.905403 robo_y=1097.626206 Lidar_x=696 Lidar_y=1098 
+12回目  行動=2 行動前の状態１lidarbufpast=55745 行動前の状態２lidarcatchpast=350003 robo_x=694.897168 robo_y=1097.333440 Lidar_x=956 Lidar_y=1089 
+13回目  行動=0 行動前の状態１lidarbufpast=72645 行動前の状態２lidarcatchpast=350021 robo_x=955.872740 robo_y=1081.589357 Lidar_x=948 Lidar_y=1319 
+14回目  行動=0 行動前の状態１lidarbufpast=88545 行動前の状態２lidarcatchpast=468549 robo_x=949.520482 robo_y=1307.408865 Lidar_x=1451 Lidar_y=1580 
+15回目  行動=0 行動前の状態１lidarbufpast=98444 行動前の状態２lidarcatchpast=558405 robo_x=947.540393 robo_y=1564.650970 Lidar_x=953 Lidar_y=1831 
+16回目  行動=3 行動前の状態１lidarbufpast=88544 行動前の状態２lidarcatchpast=623684 robo_x=947.469153 robo_y=1819.198022 Lidar_x=1338 Lidar_y=1579 
+17回目  行動=3 行動前の状態１lidarbufpast=72635 行動前の状態２lidarcatchpast=558404 robo_x=926.469864 robo_y=1571.310088 Lidar_x=918 Lidar_y=1324 
+18回目  行動=0 行動前の状態１lidarbufpast=88535 行動前の状態２lidarcatchpast=468533 robo_x=915.836986 robo_y=1314.337582 Lidar_x=910 Lidar_y=1573 
+19回目  行動=2 行動前の状態１lidarbufpast=87546 行動前の状態２lidarcatchpast=558389 robo_x=906.615901 robo_y=1561.590106 Lidar_x=1151 Lidar_y=1586 
+20回目  行動=0 行動前の状態１lidarbufpast=a7446 行動前の状態２lidarcatchpast=554310 robo_x=1153.685113 robo_y=1569.428366 Lidar_x=1150 Lidar_y=1831 
+21回目  行動=2 行動前の状態１lidarbufpast=16467 行動前の状態２lidarcatchpast=685126 robo_x=1144.498099 robo_y=1811.934951 Lidar_x=1398 Lidar_y=1823 
+22回目  行動=0 行動前の状態１lidarbufpast=37357 行動前の状態２lidarcatchpast=91239 robo_x=1392.506828 robo_y=1812.665717 Lidar_x=1376 Lidar_y=2073 
+ゴール!! 現在位置 Lidar_x座標: 1376 Lidar_y座標: 2073 ICP_x座標: 1371.254248 ICP_y座標: 2059.619446 dist_now=229.826509 dist_past=450.000000 

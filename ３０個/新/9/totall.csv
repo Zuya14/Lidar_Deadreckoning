@@ -1,0 +1,4 @@
+1回目  行動=0 行動前の状態１lidarbufpast=36364 行動前の状態２lidarcatchpast=222052 robo_x=1479.055955 robo_y=740.563188 Lidar_x=1500 Lidar_y=1500 dist_now=1509.582109 dist_past=0.000000
+2回目  行動=0 行動前の状態１lidarbufpast=63167 行動前の状態２lidarcatchpast=352870 robo_x=1478.268204 robo_y=989.519697 Lidar_x=1474 Lidar_y=2725 
+3回目  行動=0 行動前の状態１lidarbufpast=63076 行動前の状態２lidarcatchpast=405863 robo_x=1485.745248 robo_y=1239.058732 Lidar_x=1505 Lidar_y=1323 
+壁衝突!! 現在位置 Lidar_x座標: 1505 Lidar_y座標: 1323 ICP_x座標: 1504.790853 ICP_y座標: 1353.088388 

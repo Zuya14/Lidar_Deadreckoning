@@ -1,0 +1,24 @@
+1回目  行動=0 行動前の状態１lidarbufpast=46364 行動前の状態２lidarcatchpast=287588 robo_x=1476.495597 robo_y=738.723092 Lidar_x=1482 Lidar_y=2234 dist_now=1511.459675 dist_past=0.000000
+2回目  行動=0 行動前の状態１lidarbufpast=63767 行動前の状態２lidarcatchpast=348773 robo_x=1462.640874 robo_y=984.321086 Lidar_x=1453 Lidar_y=2252 dist_now=1027.064014 dist_past=1266.000000
+3回目  行動=3 行動前の状態１lidarbufpast=55865 行動前の状態２lidarcatchpast=407399 robo_x=1448.255982 robo_y=1224.240259 Lidar_x=1434 Lidar_y=1233 dist_now=1276.558544 dist_past=1027.000000
+4回目  行動=0 行動前の状態１lidarbufpast=63767 行動前の状態２lidarcatchpast=350309 robo_x=1455.000730 robo_y=974.234825 Lidar_x=1442 Lidar_y=987 dist_now=1026.085107 dist_past=1276.000000
+5回目  行動=3 行動前の状態１lidarbufpast=55865 行動前の状態２lidarcatchpast=407399 robo_x=1444.485875 robo_y=1225.417730 Lidar_x=1431 Lidar_y=1231 dist_now=1276.652418 dist_past=1026.000000
+6回目  行動=1 行動前の状態１lidarbufpast=56855 行動前の状態２lidarcatchpast=350309 robo_x=1436.094327 robo_y=974.948055 Lidar_x=1428 Lidar_y=985 dist_now=1333.980005 dist_past=1276.000000
+7回目  行動=0 行動前の状態１lidarbufpast=63756 行動前の状態２lidarcatchpast=354389 robo_x=1181.592910 robo_y=954.577451 Lidar_x=1175 Lidar_y=969 dist_now=1097.796898 dist_past=1333.000000
+8回目  行動=2 行動前の状態１lidarbufpast=63767 行動前の状態２lidarcatchpast=407382 robo_x=1183.569596 robo_y=1198.796010 Lidar_x=1172 Lidar_y=1211 dist_now=1033.505959 dist_past=1097.000000
+9回目  行動=3 行動前の状態１lidarbufpast=55865 行動前の状態２lidarcatchpast=407399 robo_x=1430.293265 robo_y=1218.847471 Lidar_x=1416 Lidar_y=1223 dist_now=1282.505433 dist_past=1033.000000
+10回目  行動=0 行動前の状態１lidarbufpast=63767 行動前の状態２lidarcatchpast=350309 robo_x=1420.451943 robo_y=969.963949 Lidar_x=1414 Lidar_y=981 dist_now=1029.477720 dist_past=1282.000000
+11回目  行動=3 行動前の状態１lidarbufpast=56865 行動前の状態２lidarcatchpast=407399 robo_x=1416.069893 robo_y=1223.949264 Lidar_x=1401 Lidar_y=1227 dist_now=1281.845085 dist_past=1029.000000
+12回目  行動=2 行動前の状態１lidarbufpast=55275 行動前の状態２lidarcatchpast=354405 robo_x=1407.092418 robo_y=971.526299 Lidar_x=1399 Lidar_y=974 dist_now=1287.252612 dist_past=1281.000000
+13回目  行動=0 行動前の状態１lidarbufpast=63177 行動前の状態２lidarcatchpast=348789 robo_x=1666.254952 robo_y=973.528857 Lidar_x=1657 Lidar_y=971 dist_now=1044.657748 dist_past=1287.000000
+14回目  行動=3 行動前の状態１lidarbufpast=55275 行動前の状態２lidarcatchpast=405879 robo_x=1664.090812 robo_y=1218.310116 Lidar_x=1645 Lidar_y=1219 dist_now=1287.105966 dist_past=1044.000000
+15回目  行動=1 行動前の状態１lidarbufpast=55865 行動前の状態２lidarcatchpast=348789 robo_x=1661.670226 robo_y=973.087902 Lidar_x=1651 Lidar_y=973 dist_now=1282.392110 dist_past=1287.000000
+16回目  行動=2 行動前の状態１lidarbufpast=55275 行動前の状態２lidarcatchpast=350309 robo_x=1402.071269 robo_y=971.352477 Lidar_x=1391 Lidar_y=983 dist_now=1280.960462 dist_past=1282.000000
+17回目  行動=0 行動前の状態１lidarbufpast=72177 行動前の状態２lidarcatchpast=348789 robo_x=1658.270090 robo_y=978.854735 Lidar_x=1651 Lidar_y=978 dist_now=1031.472847 dist_past=1280.000000
+18回目  行動=3 行動前の状態１lidarbufpast=55275 行動前の状態２lidarcatchpast=467319 robo_x=1648.523636 robo_y=1229.276255 Lidar_x=1635 Lidar_y=1228 dist_now=1277.462984 dist_past=1031.000000
+19回目  行動=2 行動前の状態１lidarbufpast=54285 行動前の状態２lidarcatchpast=348789 robo_x=1656.588835 robo_y=982.170512 Lidar_x=1650 Lidar_y=980 dist_now=1313.389680 dist_past=1277.000000
+20回目  行動=0 行動前の状態１lidarbufpast=52176 行動前の状態２lidarcatchpast=344709 robo_x=1898.827066 robo_y=998.628983 Lidar_x=1885 Lidar_y=997 dist_now=1076.000404 dist_past=1313.000000
+21回目  行動=1 行動前の状態１lidarbufpast=72166 行動前の状態２lidarcatchpast=336246 robo_x=1865.606214 robo_y=1238.017310 Lidar_x=1859 Lidar_y=1233 dist_now=1048.491694 dist_past=1076.000000
+22回目  行動=1 行動前の状態１lidarbufpast=72755 行動前の状態２lidarcatchpast=467302 robo_x=1619.352880 robo_y=1208.323600 Lidar_x=1612 Lidar_y=1205 dist_now=1081.285476 dist_past=1048.000000
+23回目  行動=0 行動前の状態１lidarbufpast=80657 行動前の状態２lidarcatchpast=468821 robo_x=1369.230481 robo_y=1176.651215 Lidar_x=1359 Lidar_y=1175 dist_now=856.525937 dist_past=1081.000000
+壁衝突!! 現在位置 Lidar_x座標: 1832 Lidar_y座標: -84 ICP_x座標: 1328.239753 ICP_y座標: 1410.872418 dist_now=856.525937 dist_past=1081.000000 

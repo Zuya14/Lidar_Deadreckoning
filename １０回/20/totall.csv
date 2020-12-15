@@ -1,0 +1,16 @@
+1回目  行動=0 行動前の状態１lidarbufpast=36364 行動前の状態２lidarcatchpast=222052 robo_x=1480.609044 robo_y=747.770900 Lidar_x=1500 Lidar_y=1500 dist_now=1502.354246 dist_past=0.000000
+2回目  行動=0 行動前の状態１lidarbufpast=62167 行動前の状態２lidarcatchpast=348773 robo_x=1469.083659 robo_y=1000.148936 Lidar_x=1465 Lidar_y=2736 
+3回目  行動=3 行動前の状態１lidarbufpast=55266 行動前の状態２lidarcatchpast=401767 robo_x=1468.624025 robo_y=1247.727426 Lidar_x=1457 Lidar_y=2498 
+4回目  行動=3 行動前の状態１lidarbufpast=36264 行動前の状態２lidarcatchpast=348774 robo_x=1460.228761 robo_y=1002.141306 Lidar_x=1446 Lidar_y=2250 
+5回目  行動=0 行動前の状態１lidarbufpast=55766 行動前の状態２lidarcatchpast=221796 robo_x=1444.042009 robo_y=754.798562 Lidar_x=1439 Lidar_y=1028 
+6回目  行動=1 行動前の状態１lidarbufpast=56756 行動前の状態２lidarcatchpast=350054 robo_x=1444.912199 robo_y=1005.571638 Lidar_x=1182 Lidar_y=1000 
+7回目  行動=1 行動前の状態１lidarbufpast=56745 行動前の状態２lidarcatchpast=354134 robo_x=1187.059653 robo_y=998.214867 Lidar_x=940 Lidar_y=1001 
+8回目  行動=2 行動前の状態１lidarbufpast=56756 行動前の状態２lidarcatchpast=354117 robo_x=940.988302 robo_y=999.121947 Lidar_x=1178 Lidar_y=1000 
+9回目  行動=2 行動前の状態１lidarbufpast=56865 行動前の状態２lidarcatchpast=354134 robo_x=1181.393362 robo_y=995.687376 Lidar_x=1428 Lidar_y=989 
+10回目  行動=0 行動前の状態１lidarbufpast=63767 行動前の状態２lidarcatchpast=354405 robo_x=1430.855679 robo_y=994.749254 Lidar_x=1438 Lidar_y=1245 
+11回目  行動=3 行動前の状態１lidarbufpast=55765 行動前の状態２lidarcatchpast=407399 robo_x=1441.507880 robo_y=1249.501438 Lidar_x=1410 Lidar_y=1000 
+12回目  行動=0 行動前の状態１lidarbufpast=62667 行動前の状態２lidarcatchpast=350053 robo_x=1414.417952 robo_y=1009.304827 Lidar_x=1419 Lidar_y=1257 
+13回目  行動=2 行動前の状態１lidarbufpast=62077 行動前の状態２lidarcatchpast=403047 robo_x=1421.659382 robo_y=1262.812385 Lidar_x=1673 Lidar_y=1258 
+14回目  行動=2 行動前の状態１lidarbufpast=63087 行動前の状態２lidarcatchpast=401527 robo_x=1675.066838 robo_y=1258.971508 Lidar_x=1916 Lidar_y=1262 
+15回目  行動=0 行動前の状態１lidarbufpast=62088 行動前の状態２lidarcatchpast=405639 robo_x=1923.678144 robo_y=1258.130066 Lidar_x=1911 Lidar_y=1310 
+壁衝突!! 現在位置 Lidar_x座標: 1911 Lidar_y座標: 1310 ICP_x座標: 1912.593192 ICP_y座標: 1315.226067 
